@@ -26,7 +26,7 @@ export const Documentation = () => {
     }
   };
   return (
-    <div className="w-4/5">
+    <div className="w-full">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
