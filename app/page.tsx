@@ -1,17 +1,11 @@
 import { Link } from "@heroui/link";
-import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
-import { FaBook, FaSchool } from "react-icons/fa6";
-import { FaPencilRuler } from "react-icons/fa";
 
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
 import Image from "next/image";
 import Countdown from "@/components/countdown";
-import { Documentation } from "@/components/documentation";
-import { Card, CardBody, Divider } from "@heroui/react";
+
 import { Register } from "@/components/register";
 
 export default function Home() {
@@ -53,7 +47,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-4">
-            <span className="text-medium">Sponsored By:</span>
+            <span className="text-medium">Supported By:</span>
             <Image src="/logo-cendekia.png" alt="Cendekia" width={200} height={50} />
           </div>
         </div>
@@ -85,12 +79,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="relative flex flex-col min-h-screen items-center justify-center px-6">
+      <div className="relative flex flex-col min-h-screen items-center justify-center px-6 py-44 lg:py-64 text-center">
         <div className="absolute top-0 left-0 -translate-x-[60rem] w-4/5 -z-10 rounded-full aspect-square bg-gradient-to-t from-green-600/70 backdrop-filter blur-3xl opacity-35" />
         <span className={title({ size: "sm" })}><span className={title({ color: "green", size: "sm" })}>TOUCH #14</span> Try Out Chemicalistronic</span>
         <span className={subtitle({ className: "text-center" })}>16 Februari 2025 – SMK SMTI Yogyakarta</span>
         <div className="flex w-full mt-10 justify-center">
           <Register />
+
         </div>
       </div>
     </section>

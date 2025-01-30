@@ -3,6 +3,7 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Card, CardBody, CardFooter, CardHeader, Link } from "@heroui/react";
 import { button as buttonStyles } from "@heroui/theme";
 import { subtitle, title } from "./primitives";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
 
 const items = [
   {
@@ -47,7 +48,7 @@ export function Register() {
     <div className="flex flex-col gap-4 items-center justify-center">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full place-items-center">
         {items.map((item) => (
-          <Card isHoverable key={item.participant} className="w-full h-96">
+          <Card isHoverable key={item.participant} className="w-full h-full">
             <CardHeader className="text-center">
               <span className={subtitle({ className: "text-center" })}>{item.participant} Participants</span>
             </CardHeader>
@@ -72,8 +73,33 @@ export function Register() {
             </CardFooter>
           </Card>
         ))}
-        <div className="w-full h-96">
-          
+        <div className="flex flex-col justify-center items-center w-full h-72 lg:h-full">
+          <span className={title({ size: "tiny" })}>Contact Us for More Info</span>
+          <span className='text-center text-default-400'>Got questions? Reach out to us:</span>
+          <Link
+            isExternal
+            className={`${buttonStyles({
+              color: "success",
+              radius: "full",
+              variant: "shadow",
+            })} flex justify-center items-center mt-4`}
+            href="wa.me/6281542780426"
+          >
+            <IconBrandWhatsapp />
+            Contact Arif
+          </Link>
+          <Link
+            isExternal
+            className={`${buttonStyles({
+              color: "success",
+              radius: "full",
+              variant: "shadow",
+            })} flex justify-center items-center mt-4`}
+            href="wa.me/6287826540014"
+          >
+            <IconBrandWhatsapp />
+            Contact Leny
+          </Link>
         </div>
       </div>
     </div>
