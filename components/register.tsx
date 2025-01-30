@@ -48,15 +48,12 @@ const items = [
 export function Register() {
   return (
     <div className="flex flex-col gap-4 items-center justify-center">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full place-items-center">
+      <div
+        className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full place-items-center">
         {items.map((item, index) => (
-          <motion.div
+          <div
             key={index}
-            initial={{ opacity: 0.0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring", visualDuration: 0.4, bounce: 0.25, delay: index * 0.1
-            }}
+
           >
             <Card isHoverable key={item.participant} className="w-full h-full drop-shadow">
               <CardHeader className="text-center">
@@ -82,15 +79,9 @@ export function Register() {
                 </Link>
               </CardFooter>
             </Card>
-          </motion.div>
+          </div>
         ))}
-        <motion.div
-          initial={{ opacity: 0.0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{
-            type: "spring", visualDuration: 0.4, bounce: 0.25, delay: 0.6
-          }}
-          className="relative flex flex-col justify-center items-center rounded-medium w-full h-72 lg:h-full overflow-hidden drop-shadow border border-divider">
+        <div className="relative flex flex-col justify-center items-center rounded-medium w-full h-72 lg:h-full overflow-hidden drop-shadow border border-divider">
           <div className="absolute top-0 left-0 -translate-x-10 -translate-y-28 -z-10 w-3/5 rounded-full aspect-square bg-green-600/70 backdrop-filter blur-3xl opacity-50" />
           <div className="absolute bottom-0 right-0 translate-x-28 translate-y-24 -z-10 w-3/5 rounded-full aspect-square bg-green-600/70 backdrop-filter blur-3xl opacity-50" />
 
@@ -120,7 +111,7 @@ export function Register() {
             <IconBrandWhatsapp />
             Contact Leny
           </Link>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
