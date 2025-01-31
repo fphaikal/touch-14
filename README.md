@@ -1,8 +1,6 @@
-# Next.js & HeroUI Template
+# ReDecoding Landing Page Website TOUCH 14 (Try Out Chemicalistronic)
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
-
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+This project is aimed at improving the UI on the landing page of TOUCH 14 to make it look more attractive.
 
 ## Technologies Used
 
@@ -16,12 +14,10 @@ This is a template for creating applications using Next.js 14 (app directory) an
 
 ## How to Use
 
-### Use the template with create-next-app
-
-To create a new project based on this template using `create-next-app`, run the following command:
+### Clone this project
 
 ```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
+git clone https://github.com/fphaikal/fase-7.git
 ```
 
 ### Install dependencies
